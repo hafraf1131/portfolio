@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Download, ExternalLink } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,19 +53,6 @@ const Header: React.FC = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              href="https://hafthapali.framer.website/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex items-center space-x-2 transition-all duration-200 hover:scale-105 ${
-                isScrolled 
-                  ? 'text-purple-600 hover:text-purple-700' 
-                  : 'text-purple-300 hover:text-white'
-              }`}
-            >
-              <ExternalLink size={16} />
-              <span>Portfolio</span>
-            </a>
             <button 
               onClick={handleResumeDownload}
               className="group relative bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-6 py-2 rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -103,15 +90,6 @@ const Header: React.FC = () => {
                 </button>
               ))}
               <div className="px-4 pt-4 border-t border-gray-200 space-y-3">
-                <a
-                  href="https://hafthapali.framer.website/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-purple-600 hover:text-purple-700 transition-colors"
-                >
-                  <ExternalLink size={16} />
-                  <span>Portfolio</span>
-                </a>
                 <button 
                   onClick={handleResumeDownload}
                   className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-4 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 shadow-lg"

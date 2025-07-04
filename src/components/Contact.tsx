@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, ExternalLink, Linkedin, Github, Sparkles, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Sparkles, MessageCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -145,24 +145,16 @@ const Contact: React.FC = () => {
               </h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://hafthapali.framer.website/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  <ExternalLink size={24} className="group-hover:rotate-12 transition-transform" />
-                </a>
-                <a
                   href="#"
                   className="group p-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  <Linkedin size={24} className="group-hover:rotate-12 transition-transform" />
+                  <Linkedin size={24} />
                 </a>
                 <a
                   href="#"
                   className="group p-4 bg-gradient-to-r from-gray-700 to-gray-900 text-white rounded-xl hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  <Github size={24} className="group-hover:rotate-12 transition-transform" />
+                  <Github size={24} />
                 </a>
               </div>
             </motion.div>

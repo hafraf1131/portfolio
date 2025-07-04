@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ExternalLink, Mail, Phone, Sparkles } from 'lucide-react';
+import { Heart, Mail, Phone, Sparkles } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -20,16 +20,6 @@ const Footer: React.FC = () => {
             <p className="text-gray-300 leading-relaxed">
               Data Scientist passionate about leveraging AI and machine learning to solve real-world problems and drive innovation through cutting-edge technology solutions.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://hafthapali.framer.website/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 hover:scale-110"
-              >
-                <ExternalLink size={20} className="group-hover:rotate-12 transition-transform" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}

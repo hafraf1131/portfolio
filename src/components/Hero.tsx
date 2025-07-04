@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Download, ChevronDown } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Download, ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const handleResumeDownload = () => {
@@ -129,19 +129,6 @@ const Hero: React.FC = () => {
                 <span className="relative z-10">Get In Touch</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
-              
-              <a
-                href="https://hafthapali.framer.website/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative px-8 py-4 border-2 border-purple-500 text-purple-400 rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:text-white"
-              >
-                <span className="relative z-10 flex items-center space-x-2">
-                  <span>View Portfolio</span>
-                  <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </a>
 
               <button 
                 onClick={handleResumeDownload}
@@ -172,14 +159,6 @@ const Hero: React.FC = () => {
                 className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <Linkedin size={24} />
-              </a>
-              <a
-                href="https://hafthapali.framer.website/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
-              >
-                <ExternalLink size={24} />
               </a>
             </motion.div>
           </motion.div>

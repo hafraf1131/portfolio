@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Download, ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const handleResumeDownload = () => {
+    window.open('https://github.com/hafraf1131/portfolio/raw/main/Hafthap%20ali%20.M.pdf', '_blank');
+  };
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden flex items-center justify-center">
       {/* Animated background elements */}
@@ -139,7 +143,10 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
 
-              <button className="group relative px-8 py-4 border-2 border-gray-500 text-gray-300 rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:text-white hover:border-white">
+              <button 
+                onClick={handleResumeDownload}
+                className="group relative px-8 py-4 border-2 border-gray-500 text-gray-300 rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:text-white hover:border-white"
+              >
                 <span className="relative z-10 flex items-center space-x-2">
                   <Download size={16} className="group-hover:translate-y-1 transition-transform" />
                   <span>Resume</span>
@@ -156,13 +163,13 @@ const Hero: React.FC = () => {
             >
               <a
                 href="#"
-                className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
+                className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <Github size={24} />
               </a>
               <a
                 href="#"
-                className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
+                className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <Linkedin size={24} />
               </a>
@@ -170,7 +177,7 @@ const Hero: React.FC = () => {
                 href="https://hafthapali.framer.website/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
+                className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <ExternalLink size={24} />
               </a>
@@ -190,7 +197,7 @@ const Hero: React.FC = () => {
               
               {/* Main image container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full p-1 animate-spin-slow">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full p-1">
                   <div className="w-full h-full bg-slate-900 rounded-full p-2">
                     <img
                       src="/src/assets/1737699893395.jpg"
@@ -202,11 +209,7 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Floating tech icons */}
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-0"
-              >
+              <div className="absolute inset-0">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
                   🐍
                 </div>
@@ -219,7 +222,7 @@ const Hero: React.FC = () => {
                 <div className="absolute top-1/2 -left-8 transform -translate-y-1/2 w-14 h-14 bg-gradient-to-r from-green-500 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl shadow-lg">
                   📈
                 </div>
-              </motion.div>
+              </div>
 
               {/* Stats floating cards */}
               <motion.div

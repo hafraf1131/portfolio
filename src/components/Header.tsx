@@ -21,6 +21,10 @@ const Header: React.FC = () => {
     }
   };
 
+  const handleResumeDownload = () => {
+    window.open('https://github.com/hafraf1131/portfolio/raw/main/Hafthap%20ali%20.M.pdf', '_blank');
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-xl border-b border-purple-100' : 'bg-transparent'
@@ -62,7 +66,10 @@ const Header: React.FC = () => {
               <ExternalLink size={16} />
               <span>Portfolio</span>
             </a>
-            <button className="group relative bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-6 py-2 rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <button 
+              onClick={handleResumeDownload}
+              className="group relative bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-6 py-2 rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
               <span className="relative z-10 flex items-center space-x-2">
                 <Download size={16} className="group-hover:translate-y-1 transition-transform" />
                 <span>Resume</span>
@@ -105,7 +112,10 @@ const Header: React.FC = () => {
                   <ExternalLink size={16} />
                   <span>Portfolio</span>
                 </a>
-                <button className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-4 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 shadow-lg">
+                <button 
+                  onClick={handleResumeDownload}
+                  className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-4 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 shadow-lg"
+                >
                   <Download size={16} />
                   <span>Resume</span>
                 </button>

@@ -23,8 +23,8 @@ const Hero: React.FC = () => {
             key={i}
             className="absolute w-2 h-2 bg-white/20 rounded-full"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1200),
+              y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 800),
             }}
             animate={{
               y: [0, -100, 0],
@@ -149,7 +149,9 @@ const Hero: React.FC = () => {
               className="flex space-x-6"
             >
               <a
-                href="#"
+                href="https://github.com/hafraf1131"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <Github size={24} />
@@ -179,7 +181,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full p-1">
                   <div className="w-full h-full bg-slate-900 rounded-full p-2">
                     <img
-                      src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+                      src="https://github.com/hafraf1131/portfolio/raw/main/public/hafthaf.jpg"
                       alt="Hafthap Ali M - Data Scientist"
                       className="w-full h-full object-cover rounded-full"
                     />

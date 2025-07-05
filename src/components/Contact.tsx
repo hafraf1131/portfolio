@@ -69,8 +69,8 @@ const Contact: React.FC = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      value: "hafthapali2003@gmail.com",
-      link: "mailto:hafthapali2003@gmail.com",
+      value: "hafthafalimpt@gmail.com",
+      link: "mailto:hafthafalimpt@gmail.com",
       gradient: "from-blue-500 to-cyan-500"
     },
     {

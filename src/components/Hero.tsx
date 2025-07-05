@@ -97,11 +97,11 @@ const Hero: React.FC = () => {
               className="flex flex-wrap gap-6 text-gray-300"
             >
               <a
-                href="mailto:hafthapali2003@gmail.com"
+                href="mailto:hafthafalimpt@gmail.com"
                 className="flex items-center space-x-2 hover:text-purple-400 transition-colors group"
               >
                 <Mail size={20} className="group-hover:scale-110 transition-transform" />
-                <span>hafthapali2003@gmail.com</span>
+                <span>hafthafalimpt@gmail.com</span>
               </a>
               <a
                 href="tel:+916383837514"

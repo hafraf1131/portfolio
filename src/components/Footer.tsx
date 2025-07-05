@@ -49,13 +49,13 @@ const Footer: React.FC = () => {
             </h4>
             <div className="space-y-4">
               <a
-                href="mailto:hafthapali2003@gmail.com"
+                href="mailto:hafthafalimpt@gmail.com"
                 className="group flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-all duration-200"
               >
                 <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors">
                   <Mail size={16} />
                 </div>
-                <span className="group-hover:translate-x-1 transition-transform">hafthapali2003@gmail.com</span>
+                <span className="group-hover:translate-x-1 transition-transform">hafthafalimpt@gmail.com</span>
               </a>
               <a
                 href="tel:+916383837514"

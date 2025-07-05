@@ -29,7 +29,7 @@ In your Netlify site dashboard:
 
 1. Go to "Site settings" → "Environment variables"
 2. Add these variables:
-   - `GMAIL_USER`: Your Gmail address (e.g., hafthapali2003@gmail.com)
+   - `GMAIL_USER`: Your Gmail address (e.g., hafthafalimpt@gmail.com)
    - `GMAIL_APP_PASSWORD`: The 16-character app password from step 1
 
 ### 3. Deploy
@@ -61,7 +61,7 @@ npm run build
 
 ## Contact
 
-- Email: hafthapali2003@gmail.com
+- Email: hafthafalimpt@gmail.com
 - Phone: +91 6383837514
 - Location: Chennai, Tamil Nadu
 

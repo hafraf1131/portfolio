@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Brain, Globe, MessageSquare, Clock, Target, BarChart, Sparkles } from 'lucide-react';
+import { Code, Database, Brain, MessageSquare, Clock, Target, BarChart, Sparkles } from 'lucide-react';
 
 const Skills: React.FC = () => {
   const skillCategories = [

@@ -179,7 +179,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full p-1">
                   <div className="w-full h-full bg-slate-900 rounded-full p-2">
                     <img
-                      src="/src/assets/1737699893395.jpg"
+                      src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
                       alt="Hafthap Ali M - Data Scientist"
                       className="w-full h-full object-cover rounded-full"
                     />

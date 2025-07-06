@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Brain, Activity, Database, Zap, Sparkles, ArrowRight } from 'lucide-react';
+import { Brain, Activity, Database, Zap, Sparkles, ArrowRight } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -16,9 +16,7 @@ const Projects: React.FC = () => {
       technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
       icon: <Brain size={32} />,
       gradient: "from-blue-500 to-cyan-500",
-      bgGradient: "from-blue-50 to-cyan-50",
-      githubUrl: "https://github.com/hafraf1131/diabetesDetection-Using-Machine-Learning-",
-      demoUrl: null
+      bgGradient: "from-blue-50 to-cyan-50"
     },
     {
       title: "Cattle Monitoring System",
@@ -32,9 +30,7 @@ const Projects: React.FC = () => {
       technologies: ["IoT Sensors", "GPS", "WiFi Module", "Cloud Storage", "Data Analytics", "Python"],
       icon: <Activity size={32} />,
       gradient: "from-green-500 to-emerald-500",
-      bgGradient: "from-green-50 to-emerald-50",
-      githubUrl: null,
-      demoUrl: null
+      bgGradient: "from-green-50 to-emerald-50"
     }
   ];
 
@@ -143,7 +139,7 @@ const Projects: React.FC = () => {
                     </ul>
                   </div>
 
-                  <div className="mb-8">
+                  <div className="mb-6">
                     <h4 className="font-bold text-slate-800 mb-4 flex items-center">
                       <span className="w-2 h-2 bg-cyan-500 rounded-full mr-3"></span>
                       Technologies Used
@@ -162,48 +158,6 @@ const Projects: React.FC = () => {
                         </motion.span>
                       ))}
                     </div>
-                  </div>
-
-                  <div className="flex space-x-4">
-                    {project.githubUrl ? (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`group/btn flex items-center space-x-2 bg-gradient-to-r ${project.gradient} text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl`}
-                      >
-                        <Github size={18} className="group-hover/btn:rotate-12 transition-transform" />
-                        <span>View Code</span>
-                      </a>
-                    ) : (
-                      <button 
-                        disabled
-                        className="group/btn flex items-center space-x-2 bg-gray-400 text-white px-6 py-3 rounded-xl font-semibold cursor-not-allowed opacity-60"
-                      >
-                        <Github size={18} />
-                        <span>Private Repo</span>
-                      </button>
-                    )}
-                    
-                    {project.demoUrl ? (
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group/btn flex items-center space-x-2 border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-xl font-semibold hover:border-purple-500 hover:text-purple-600 transition-all duration-300"
-                      >
-                        <ExternalLink size={18} className="group-hover/btn:translate-x-1 transition-transform" />
-                        <span>Live Demo</span>
-                      </a>
-                    ) : (
-                      <button 
-                        disabled
-                        className="group/btn flex items-center space-x-2 border-2 border-gray-300 text-gray-400 px-6 py-3 rounded-xl font-semibold cursor-not-allowed opacity-60"
-                      >
-                        <ExternalLink size={18} />
-                        <span>Demo Coming Soon</span>
-                      </button>
-                    )}
                   </div>
                 </div>
               </div>

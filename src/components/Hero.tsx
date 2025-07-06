@@ -97,11 +97,11 @@ const Hero: React.FC = () => {
               className="flex flex-wrap gap-6 text-gray-300"
             >
               <a
-                href="mailto:hafthafalimpt@gmail.com"
+                href="mailto:Hafthapali2003@gmail.com"
                 className="flex items-center space-x-2 hover:text-purple-400 transition-colors group"
               >
                 <Mail size={20} className="group-hover:scale-110 transition-transform" />
-                <span>hafthafalimpt@gmail.com</span>
+                <span>Hafthapali2003@gmail.com</span>
               </a>
               <a
                 href="tel:+916383837514"
@@ -122,13 +122,13 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 1.2 }}
               className="flex flex-wrap gap-4"
             >
-              <button
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              <a
+                href="mailto:Hafthapali2003@gmail.com"
                 className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
               >
                 <span className="relative z-10">Get In Touch</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </a>
 
               <button 
                 onClick={handleResumeDownload}
@@ -157,7 +157,9 @@ const Hero: React.FC = () => {
                 <Github size={24} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/hafthap-hafthap-ali-b6453829a"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-white/10 backdrop-blur-sm text-white rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <Linkedin size={24} />

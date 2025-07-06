@@ -6,35 +6,19 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 - 🎨 Modern design with smooth animations
 - 📱 Fully responsive layout
-- 📧 Working contact form with email integration
+- 📧 Direct email communication
 - 🚀 Fast performance with Vite
 - 🎯 SEO optimized
 - ♿ Accessible design
 
-## Contact Form Setup
+## Contact
 
-The contact form uses Netlify Functions to send emails through Gmail. To set it up:
+The portfolio features direct communication through:
 
-### 1. Enable Gmail App Passwords
-
-1. Go to your Google Account settings: https://myaccount.google.com/
-2. Navigate to "Security" → "2-Step Verification" (enable if not already)
-3. Go to "App passwords": https://myaccount.google.com/apppasswords
-4. Generate a new app password for "Mail"
-5. Copy the 16-character password (remove spaces)
-
-### 2. Configure Environment Variables in Netlify
-
-In your Netlify site dashboard:
-
-1. Go to "Site settings" → "Environment variables"
-2. Add these variables:
-   - `GMAIL_USER`: Your Gmail address (e.g., hafthafalimpt@gmail.com)
-   - `GMAIL_APP_PASSWORD`: The 16-character app password from step 1
-
-### 3. Deploy
-
-The contact form will automatically work once deployed to Netlify with the environment variables set.
+- **Email**: [Hafthapali2003@gmail.com](mailto:Hafthapali2003@gmail.com)
+- **Phone**: [+91 6383837514](tel:+916383837514)
+- **LinkedIn**: [hafthap-hafthap-ali-b6453829a](https://www.linkedin.com/in/hafthap-hafthap-ali-b6453829a)
+- **GitHub**: [hafraf1131](https://github.com/hafraf1131)
 
 ## Local Development
 
@@ -56,14 +40,22 @@ npm run build
 - Tailwind CSS
 - Framer Motion
 - Vite
-- Netlify Functions
-- Nodemailer
 
-## Contact
+## About
 
-- Email: hafthafalimpt@gmail.com
-- Phone: +91 6383837514
-- Location: Chennai, Tamil Nadu
+This portfolio showcases the work and experience of Hafthap Ali M, a passionate Data Scientist with expertise in:
+
+- Machine Learning
+- Python Programming
+- Data Analysis
+- Artificial Intelligence
+- Data Visualization
+
+## Contact Information
+
+- **Email**: Hafthapali2003@gmail.com
+- **Phone**: +91 6383837514
+- **Location**: Chennai, Tamil Nadu
 
 ---
 

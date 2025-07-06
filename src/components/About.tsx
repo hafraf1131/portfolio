@@ -193,12 +193,12 @@ const About: React.FC = () => {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Ready to embark on a journey towards mutual success through innovative technology strategies and data-driven solutions.
                 </p>
-                <button
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                <a
+                  href="mailto:Hafthapali2003@gmail.com"
                   className="bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform shadow-lg hover:shadow-xl"
                 >
                   Get In Touch
-                </button>
+                </a>
               </div>
             </motion.div>
           </motion.div>
